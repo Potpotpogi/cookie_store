@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import 'screens/login_screen.dart';
-import 'screens/home_screen.dart';
+import 'screens/auth_screen.dart';
+import 'screens/main_shell.dart';
 
 /// Shows the shop when logged in, the login screen otherwise.
 class AuthGate extends StatelessWidget {
@@ -15,9 +15,9 @@ class AuthGate extends StatelessWidget {
       builder: (context, snapshot) {
         final session = Supabase.instance.client.auth.currentSession;
         if (session != null) {
-          return const HomeScreen();
+          return const MainShell();
         }
-        return const LoginScreen();
+        return const AuthScreen();
       },
     );
   }

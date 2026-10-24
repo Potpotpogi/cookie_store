@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'auth_gate.dart';
 
-/// Animated intro shown every time the app opens.
-/// Cookie drops + rolls in, chips pop, a bite is taken, crumbs fly,
-/// then the title appears and we fade into the AuthGate (login).
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 

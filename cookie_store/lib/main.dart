@@ -9,10 +9,10 @@ Future<void> main() async {
 
   await Supabase.initialize(
     url: AppConfig.supabaseUrl,
-    anonKey: AppConfig.supabaseAnonKey,
+    publishableKey: AppConfig.supabaseAnonKey,
   );
 
-  // Always ask for login when the app is opened
+  
   try {
     await Supabase.instance.client.auth.signOut(scope: SignOutScope.local);
   } catch (_) {}
