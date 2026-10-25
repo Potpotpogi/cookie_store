@@ -112,7 +112,7 @@ class _SplashScreenState extends State<SplashScreen>
                     child: Transform.translate(
                       offset: Offset(0, (1 - title) * 24),
                       child: const Text(
-                        'Cookie Store',
+                        'Crumbly',
                         style: TextStyle(
                           fontSize: 36,
                           fontWeight: FontWeight.w800,
